@@ -26,7 +26,7 @@ INSERT INTO Perusahaan (id_p, nama, alamat) VALUES
 SELECT * FROM Perusahaan;
 ```
 #### *Output Tabel Perusahaan :*
-![alt text](gambar1..png)
+![alt text](gambarrr/gambar1..png)
 
 
 ### *Script SQL berdasarkan Tabel Departemen*
@@ -46,7 +46,7 @@ INSERT INTO Departemen (id_dept, nama, id_p, manajer_nik) VALUES
 SELECT * FROM Departemen;
 ```
 #### *Output Tabel Departemen :*
-![alt text](gambar2..png)
+![alt text](gambarrr/gambar2..png)
 
 
 ### *Script SQL berdasarkan Tabel Karyawan*
@@ -72,7 +72,7 @@ INSERT INTO Karyawan (nik, nama, id_dept, sup_nik, gaji_pokok) VALUES
 SELECT * FROM Karyawan;
 ```
 #### *Output Tabel Karyawan :*
-![alt text](gambar3..png)
+![alt text](gambarrr/gambar3..png)
 
 
 ### *Script SQL berdasarkan Tabel Project*
@@ -92,7 +92,7 @@ INSERT INTO Project (id_proj, nama, tgl_mulai, tgl_selesai, status) VALUES
 SELECT * FROM Project;
 ```
 #### *Output Tabel Project :*
-![alt text](gambar4..png)
+![alt text](gambarrr/gambar4..png)
 
 
 ### *Script SQL berdasarkan Tabel Project Detail*
@@ -119,7 +119,7 @@ INSERT INTO Project_detail (id_proj, nik) VALUES
 SELECT * FROM Project_detail;
 ```
 #### *Output Tabel Project Detail :*
-![alt text](gambar5..png)
+![alt text](gambarrr/gambar5..png)
 
 
 # Soal latihan praktikum 7
@@ -145,7 +145,7 @@ SELECT nik, nama, id_dept FROM Karyawan WHERE id_dept = (SELECT id_dept FROM Kar
 ```
 
 **Output :**
-![alt text](gambar6..png)
+![alt text](gambarrr/gambar6..png)
 
 
 ### 2. Tampilkan data karyawan yang gajinya lebih besar dari rata-rata gaji semua karyawan. Urutkan menurun berdasarkan besaran gaji
@@ -156,7 +156,7 @@ SELECT nik, nama, id_dept, gaji_pokok FROM karyawan WHERE gaji_pokok > (SELECT A
 ```
 
 **Output :**
-![alt text](gambar7..png)
+![alt text](gambarrr/gambar7..png)
 
 
 ### 3. Tampilkan nik dan nama karyawan untuk semua karyawan yang bekerja di departmen yang sama dengan karyawan dengan nama yang mengandung huruf 'K'.
@@ -167,7 +167,7 @@ SELECT nik, nama FROM Karyawan WHERE id_dept IN (SELECT id_dept FROM Karyawan WH
 ```
 
 **Output :**
-![alt text](gambar8..png)
+![alt text](gambarrr/gambar8..png)
 
 
 ### 4. Tampilkan data karyawan yang bekerja pada departemen yang ada di Kantor pusat.
@@ -178,7 +178,7 @@ SELECT karyawan.nik, karyawan.nama, karyawan.id_dept FROM karyawan JOIN departem
 ```
 
 **Output :**
-![alt text](gambar9..png)
+![alt text](gambarrr/gambar9..png)
 
 
 ### 5. Tampilkan nik dan nama karyawan untuk semua karyawan yang bekerja di departmen yang sama dengan karyawan dengan nama yang mengandung huruf 'K' dan yang gajinya lebih besar dari rata-rata gaji semua karyawan
@@ -189,4 +189,4 @@ SELECT DISTINCT k1.nik, k1.nama FROM karyawan k1 JOIN karyawan k2 ON k1.id_dept 
 ```
 
 **Output :**
-![alt text](gambar10..png)
+![alt text](gambarrr/gambar10..png)
